@@ -43,4 +43,4 @@ Connect your Custom printer to your machine
 
 ### Use your printer
 
-`docker exec custom-printer lp -d printer-name /test-files/test.txt`
+`docker exec custom-printer lp -d printer-name /printers/test-files/test.txt`
