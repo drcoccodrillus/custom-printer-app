@@ -27,6 +27,16 @@ WORKDIR /printers/drivers/tl80
 RUN cp -f x86_64/rastertotl80 /usr/lib/cups/filter
 RUN cp -f TL80.ppd /usr/share/cups/model
 
+#Drivers for Custom VK80-200
+WORKDIR /printers/drivers/vk80-200
+RUN cp -f x86_64/rastertovk80_200 /usr/lib/cups/filter
+RUN cp -f VK80_200.ppd /usr/share/cups/model
+
+#Drivers for Custom VK80-300
+WORKDIR /printers/drivers/vk80-300
+RUN cp -f x86_64/rastertovk80_300 /usr/lib/cups/filter
+RUN cp -f VK80_300.ppd /usr/share/cups/model
+
 #Drivers for Custom VKP80II
 WORKDIR /printers/drivers/vkp80II
 RUN cp -f x86_64/rastertovkp80 /usr/lib/cups/filter
