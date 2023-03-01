@@ -13,6 +13,7 @@ RUN apt-get autoremove -y && apt-get autoclean \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt
 
+COPY ./test-files /printers/test-files
 COPY ./drivers /printers/drivers
 COPY ./bin /printers/bin
 
