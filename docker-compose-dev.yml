@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+
+  custom-printer-app:
+    build: .
+    image: drcoccodrillus/custom-printer-app:dev
+    container_name: custom-printers
+    restart: always
+    privileged: true
+    devices:
+      - /dev:/dev
+    ports:
+      - "8631:631"
+    networks:
+      - printer-network
+
+networks:
+  printer-network:
+    driver: bridge
