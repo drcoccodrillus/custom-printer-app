@@ -9,13 +9,15 @@ A dockerized printer application based on CUPS for Custom printers
 The following Custom printers are fully supported
 
 - K3
+- K3-X
+- TL80
+- TL80III
 - VKP80II
 - VKP80III
 
 The following Custom printers have not been tested yet
-- K3-X
-- TL80
-- TL80III
+- VK80 (915DY010100J00 - PRINTER VK80 ETH USB REAR CONN.)
+- VK80 (915DY020200700 - PRINTER VK80 ETH USB LATERAL CONNEC. 300)
 
 ## How to use it
 
@@ -35,12 +37,12 @@ Connect your Custom printer to your machine
 
 ### Initialize the printer app
 
-`docker exec custom-printer discovery`
+`docker exec custom-printers discovery`
 
 ### Check if your printer has been configured
 
-`docker exec custom-printer lpstat -t`
+`docker exec custom-printers lpstat -t`
 
 ### Use your printer
 
-`docker exec custom-printer lp -d printer-name /printers/test-files/test.txt`
+`docker exec custom-printers lp -d printer-name /printers/test.txt`
