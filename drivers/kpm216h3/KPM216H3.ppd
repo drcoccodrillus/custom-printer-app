@@ -1,0 +1,198 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "1.1"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "KPM216H3.ppd"
+*Manufacturer:          "Custom Engineering"
+*Product:               "(KPM216H3 300Dpi)"
+*1284DeviceID:          "MFG:Custom Engineering;CMD:Custom Engineering;MDL:KPM216H3 (STR_T-U001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       200
+*cupsFilter:            "application/vnd.cups-raster 0 rastertokpm216h3"
+*ModelName:             "KPM216H3"
+*ShortNickName:         "KPM216H3"
+*NickName:              "KPM216H3 rel 2.03 (S.Code:01DV00076)"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "2"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     True
+*TTRasterizer:          Type42
+*cupsBlackDither:		"0.25 0.37"
+*cupsSNMPSupplies:      False
+
+*OpenUI *PageSize/Paper Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize Roll/Roll:              "<</PageSize[566 3250]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*PageSize A4/A4:                  "<</PageSize[566 830]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*PageSize A5/A5:                  "<</PageSize[566 408]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*PageSize Letter/Letter:          "<</PageSize[566 780]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/Legal:            "<</PageSize[566 1000]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion Roll/Roll:            "<</PageSize[566 3250]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*PageRegion A4/A4:                "<</PageSize[566 830]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*PageRegion A5/A5:                "<</PageSize[566 408]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*PageRegion Letter/Letter:        "<</PageSize[566 780]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/Legal:          "<</PageSize[566 1000]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: A4
+*ImageableArea Roll:                "0.0 0.0 566.0 3250.0"
+*ImageableArea A4:                  "0.0 0.0 566.0 830.0"
+*ImageableArea A5:                  "0.0 0.0 566.0 408.0"
+*ImageableArea Letter:              "0.0 0.0 566.0 780.0"
+*ImageableArea Legal:               "0.0 0.0 566.0 1000.0"
+
+*DefaultPaperDimension: A4
+*PaperDimension Roll:         "566 3250"
+*PaperDimension A4:                 "566 830"
+*PaperDimension A5:                 "566 408"
+*PaperDimension Letter:             "566 780"
+*PaperDimension Legal:              "566 1000"
+
+*MaxMediaWidth:  "566"
+*MaxMediaHeight: "3256"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[300 300]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 566
+*ParamCustomPageSize Height:       2 points 72 3256
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+*OpenGroup: Adjustment/Adjustment
+
+*OpenUI *HalftoningAlgorithm/Halftoning Algorithm: PickOne
+*OrderDependency: 1000 PageSetup *HalftoningAlgorithm
+*DefaultHalftoningAlgorithm: Accurate
+*HalftoningAlgorithm Accurate/Accurate: "
+      << /UseWTS false >> setuserparams
+      <<
+        /AccurateScreens true
+        /HalftoneType 1
+        /HalftoneName (Round Dot Screen)
+        /SpotFunction { 180 mul cos exch 180 mul cos add 2 div}
+        /Frequency 210
+        /Angle 50
+      >> sethalftone
+    "
+*End
+*HalftoningAlgorithm Radial/Radial: "
+      << /UseWTS false >> setuserparams
+      <<
+        /AccurateScreens true
+        /HalftoneType 1
+        /HalftoneName (Round Dot Screen)
+        /SpotFunction { 180 mul cos exch 180 mul cos add 2 div}
+        /Frequency 212
+        /Angle 27
+      >> sethalftone
+    "
+*End
+*HalftoningAlgorithm WTS/WTS: "
+      << /UseWTS true >> setuserparams
+      <<
+        /AccurateScreens true
+        /HalftoneType 1
+        /HalftoneName (Round Dot Screen)
+        /SpotFunction { 180 mul cos exch 180 mul cos add 2 div}
+        /Frequency 212
+        /Angle 120
+      >> sethalftone
+    "
+*End
+*HalftoningAlgorithm Standard/Standard: ""
+*CloseUI: *HalftoningAlgorithm
+
+*CloseGroup: Adjustment
+*OpenGroup: KPM216H3OPTIONS/KPM216H3 Output Options
+
+*OpenUI *PrinterQuality/Printer Quality: PickOne
+*DefaultPrinterQuality: 1Normal
+*PrinterQuality 0HighQuality/High Quality: ""
+*PrinterQuality 1Normal/Normal: ""
+*PrinterQuality 2HighSpeed/High Speed: ""
+*CloseUI: *PrinterQuality
+
+*OpenUI *PrintDensity/Print Density: PickOne
+*DefaultPrintDensity: 2Density0
+*PrintDensity 0Density-50/-50%: ""
+*PrintDensity 1Density-25/-25%: ""
+*PrintDensity 2Density0/ 0%: ""
+*PrintDensity 3Density+25/+25%: ""
+*PrintDensity 4Density+50/+50%: ""
+*CloseUI: *PrintDensity
+
+
+
+*OpenUI *PaperPresentation/Paper Presentation: PickOne
+*DefaultPaperPresentation: 3Present160mm
+*PaperPresentation 0Present40mm/40 mm: ""
+*PaperPresentation 1Present80mm/80 mm: ""
+*PaperPresentation 2Present120mm/120 mm: ""
+*PaperPresentation 3Present160mm/160 mm: ""
+*PaperPresentation 4Present200mm/200 mm: ""
+*PaperPresentation 5Present240mm/240 mm: ""
+*PaperPresentation 6Present280mm/280 mm: ""
+*PaperPresentation 7Present320mm/320 mm: ""
+*PaperPresentation 8Present360mm/360 mm: ""
+*PaperPresentation 9Present400mm/400 mm: ""
+*PaperPresentation 10Present500mm/500 mm: ""
+*CloseUI: PaperPresentation
+
+*OpenUI *DotDamagePrevention/Dot Damage Prevention: PickOne
+*DefaultDotDamagePrevention: 0Disable
+*DotDamagePrevention 0Disable/Disable: ""
+*DotDamagePrevention 1+-7Dots/+-7 Dots: ""
+*DotDamagePrevention 2+-15Dots/+-15 Dots: ""
+*CloseUI: *DotDamagePrevention
+
+*OpenUI *BlackMark/Black Mark Alignement: PickOne
+*DefaultBlackMark: 0Disable
+*BlackMark 0Disable/Disable: ""
+*BlackMark 1AtBeginPage/At Begin Page And Cut: ""
+*BlackMark 2AtCutPage/At Cut Page: ""
+*CloseUI: BlackMark
+
+*OpenUI *PageToPage/Page To Page: PickOne
+*DefaultPageToPage: 0Disable
+*PageToPage 0Disable/Disable: ""
+*PageToPage 1Enable/Enable: ""
+*CloseUI: PageToPage
+
+*OpenUI *EjectPage/Eject  Page: PickOne
+*DefaultEjectPage: 0Disable
+*EjectPage 0Disable/Disable: ""
+*EjectPage 1Enable/Enable: ""
+*CloseUI: EjectPage
+
+*OpenUI *PTPAction/Page To Page Ejecting : PickOne
+*DefaultPTPAction: 0Eject
+*PTPAction 0Eject/Eject: ""
+*PTPAction 1Retract/Retract: ""
+*CloseUI: PTPAction
+
+*OpenUI *PTPTimeout/Page To Page Timeout : PickOne
+*DefaultPTPTimeout: 1Timeout10sec
+*PTPTimeout 0Timeout5sec/5 sec: ""
+*PTPTimeout 1Timeout10sec/10 sec: ""
+*PTPTimeout 2Timeout20sec/20 sec: ""
+*PTPTimeout 3Timeout30sec/30 sec: ""
+*PTPTimeout 4Timeout40sec/40 sec: ""
+*PTPTimeout 5Timeout60sec/60 sec: ""
+*PTPTimeout 6Timeout120sec/120 sec: ""
+*CloseUI: PTPTimeout
+
+*CloseGroup: KPM216H3OPTIONS
+
+
+*% End
