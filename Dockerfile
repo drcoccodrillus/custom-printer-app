@@ -19,7 +19,7 @@ COPY ./bin /printers/bin
 
 #Drivers for Custom K3
 WORKDIR /printers/drivers/k3
-RUN chmod x86_64/755 rastertok3_64bit
+RUN chmod 755 x86_64/rastertok3_64bit
 RUN cp -f x86_64/rastertok3_64bit /usr/lib/cups/filter
 RUN cp -f x86_64/K3_64bit.ppd /usr/share/cups/model
 
