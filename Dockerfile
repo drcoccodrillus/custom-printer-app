@@ -2,7 +2,7 @@ FROM ubuntu:22.04 AS base
 
 RUN apt-get update && apt-get upgrade -y
 
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y \
     apt-utils \
     usbutils \
     cups \
@@ -13,7 +13,7 @@ RUN apt-get autoremove -y && apt-get autoclean \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt
 
-COPY ./test-files /printers/test-files
+COPY ./test-files /printers
 COPY ./drivers /printers/drivers
 COPY ./bin /printers/bin
 
@@ -53,4 +53,4 @@ WORKDIR /printers/bin
 RUN chmod +x start.sh
 RUN ln -s /printers/bin/start.sh /bin/discovery
 
-CMD ["/usr/sbin/cupsd", "-f"]
+ENTRYPOINT ["/usr/sbin/cupsd", "-f"]
