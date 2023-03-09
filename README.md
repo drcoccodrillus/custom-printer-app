@@ -51,3 +51,38 @@ Connect your Custom printer to your machine
 ### Use your printer
 
 `docker exec custom-printers lp -d printer-name /printers/test.txt`
+
+## To do
+
+- [ ] Full support for KPM216HII
+- [ ] Full support for KPM216HIII
+- [ ] Full support for P3
+- [ ] Full support for VK80
+- [ ] Full support for VKP80II
+- [ ] Full support for VKP80III
+- [ ] Automatic retrieving of printer device uri and printer setup 
+
+
+## Troubleshooting
+
+Sometimes things simply go wrong. If you need to troubleshoot CUPS these are places you should look at:
+- `/var/log/cups/access_log` - Lists all cupsd http1.1 server activity
+- `/var/log/cups/error_log` - Lists detailed information of the printing process
+- `/var/log/cups/page_log` - Echoes a new entry each time a print is successful
+- `/var/spool/cups` - Location where the scheduler stores job files
+
+
+The best way to get complete information from log files is to set `LogLevel` in `/etc/cups/cupsd.conf` as the following:
+
+```
+LogLevel debug
+```
+
+And then viewing the output from `/var/log/cups/error_log` like this:
+```
+tail -n 100 -f /var/log/cups/error_log
+```
+
+The `/var/spool/cups` location stores two types of files: control files starting with the letter "c" and data files starting with the letter "d". Control files are IPP messages based on the original IPP Print-Job or Create-Job messages, while data files are the original print files that were submitted for printing. There is one control file for every job known to the system and 0 or more data files for each job.
+
+Control files are normally cleaned out after the 500th job is submitted, while data files are removed immediately after a job has successfully printed. Both behaviors can be configured.
