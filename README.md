@@ -1,6 +1,6 @@
 # custom-printer-app
 
-A dockerized printer application based on CUPS for Custom printers
+A dockerized printer application based on CUPS for Custom® printers
 
 ***
 
@@ -54,9 +54,15 @@ Connect your Custom printer to your machine
 
 ## To do
 
-- [ ] Full support for KPM216HII
+- [x] Full support for K3
+- [ ] Full support for K3-X
+- [x] Full support for Modus3
+- [x] Full support for KPM216HII
 - [ ] Full support for KPM216HIII
 - [ ] Full support for P3
+- [x] Full support for TG2460H
+- [x] Full support for TL80
+- [ ] Full support for TL80III
 - [ ] Full support for VK80
 - [ ] Full support for VKP80II
 - [ ] Full support for VKP80III
