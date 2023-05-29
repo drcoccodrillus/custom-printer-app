@@ -58,7 +58,7 @@ Connect your Custom printer to your machine
 - [ ] Full support for K3-X
 - [x] Full support for Modus3
 - [x] Full support for KPM216HII
-- [ ] Full support for KPM216HIII
+- [x] Full support for KPM216HIII
 - [ ] Full support for P3
 - [x] Full support for TG2460H
 - [x] Full support for TL80
