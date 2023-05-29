@@ -35,6 +35,16 @@ if [ "$SEARCH_CUSTOM_KPM216H2" = "0dd4:01a2" ]; then
     /usr/sbin/cupsaccept kpm216h2
 fi
 
+if [ "$SEARCH_CUSTOM_KPM216H3" = "0dd4:019a" ]; then
+    /usr/sbin/lpadmin -x kpm216h3
+    /usr/sbin/lpadmin -p kpm216h3 -v 
+    /usr/sbin/lpadmin -p kpm216h3 -m KPM216H3.ppd
+    /usr/sbin/lpadmin -p kpm216h3 -o printer-is-shared=true
+    /usr/sbin/lpadmin -d kpm216h3
+    /usr/sbin/cupsenable kpm216h3
+    /usr/sbin/cupsaccept kpm216h3
+fi
+
 if [ "$SEARCH_CUSTOM_Modus3" = "0dd4:023b" ]; then
     /usr/sbin/lpadmin -x modus3
     /usr/sbin/lpadmin -p modus3 -v usb://CUSTOM%20SPA/MODUS3?serial=MODUS3_USB_Num.:_0
