@@ -20,6 +20,7 @@ The following Custom printers are fully supported
 The following Custom printers have not been tested yet
 - KPM216HII     (915AS020200300 - PRINTER KPM216HII RS232 USB 200 DPI)
 - KPM216HIII    (915AS050100700 - PRINTER KPM216HIII ETH USB RS232 ESP)
+- Modus3X       (915LF020200300 - PRINTER MODUS3 X USB RS232 COMPACT)
 - P3            (911MH010100733 - PRINTER P3 ETH USB RS232)
 - VK80          (915DY010100J00 - PRINTER VK80 ETH USB REAR CONN.)
 - VK80          (915DY020200700 - PRINTER VK80 ETH USB LATERAL CONNEC. 300)
@@ -57,6 +58,7 @@ Connect your Custom printer to your machine
 - [x] Full support for K3
 - [ ] Full support for K3-X
 - [x] Full support for Modus3
+- [ ] Full support for Modus3X
 - [x] Full support for KPM216HII
 - [x] Full support for KPM216HIII
 - [ ] Full support for P3
