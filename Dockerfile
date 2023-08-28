@@ -43,6 +43,12 @@ RUN chmod 755 x86_64/rastertomodus3
 RUN cp -f x86_64/rastertomodus3 /usr/lib/cups/filter
 RUN cp -f Modus3.ppd /usr/share/cups/model
 
+#Drivers for Custom Modus3X
+WORKDIR /printers/drivers/modus3x
+RUN chmod 755 x86_64/rastertomodus3x
+RUN cp -f x86_64/rastertomodus3 /usr/lib/cups/filter
+RUN cp -f Modus3x.ppd /usr/share/cups/model
+
 #Drivers for Custom P3
 WORKDIR /printers/drivers/p3
 RUN chmod 755 x86_64/rastertoP3
